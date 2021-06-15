@@ -4,10 +4,18 @@ import { Toolbar } from '@material-ui/core';
 import { IconButton } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core';
 import { Typography } from '@material-ui/core';
-import Button from '@material-ui/core/Link';
 import MenuIcon from '@material-ui/icons/Menu'
 
 import Basic from './components/Basic';
+import Derivatives from './components/Derivatives';
+import Integration from './components/Integration';
+import Log from './components/Log'
+import Logical from './components/Logical'
+import Matrix from './components/Matrix'
+import Power from './components/Power'
+import Roots from './components/Roots'
+import Statistics from './components/Statistics';
+import Trigonometry from './components/Trigonometry';
 
 const useStyles = makeStyles((theme)=>({
   root:{
@@ -25,7 +33,8 @@ const useStyles = makeStyles((theme)=>({
 function App() {
   const classes = useStyles()
 
-  const preventDefault = (e)=>e.preventDefault()
+
+
   return (
     <div className="App">
       <AppBar position="static">
@@ -39,16 +48,16 @@ function App() {
         </Toolbar>
       </AppBar>
       <div className="main">
-        <p>{<Basic/>}</p>
-        <p>Power</p>
-        <p>Trigonometry</p>
-        <p>Log</p>
-        <p>Derivatives</p>
-        <p>Integration</p>
-        <p>Roots</p>
-        <p>Matrix</p>
-        <p>Statistics</p>
-        <p>Logical</p>
+        <Basic />
+        <Derivatives />
+        <Integration />
+        <Log />
+        <Logical />
+        <Matrix />
+        <Power />
+        <Roots />
+        <Statistics />
+        <Trigonometry />
       </div>
     </div>
   );
