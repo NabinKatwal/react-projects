@@ -4,8 +4,10 @@ import { Toolbar } from '@material-ui/core';
 import { IconButton } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core';
 import { Typography } from '@material-ui/core';
-import { Button } from '@material-ui/core';
+import Button from '@material-ui/core/Link';
 import MenuIcon from '@material-ui/icons/Menu'
+
+import Basic from './components/Basic';
 
 const useStyles = makeStyles((theme)=>({
   root:{
@@ -22,6 +24,8 @@ const useStyles = makeStyles((theme)=>({
 
 function App() {
   const classes = useStyles()
+
+  const preventDefault = (e)=>e.preventDefault()
   return (
     <div className="App">
       <AppBar position="static">
@@ -35,7 +39,16 @@ function App() {
         </Toolbar>
       </AppBar>
       <div className="main">
-        <Button variant="contained" color="primary">Basic</Button>
+        <p>{<Basic/>}</p>
+        <p>Power</p>
+        <p>Trigonometry</p>
+        <p>Log</p>
+        <p>Derivatives</p>
+        <p>Integration</p>
+        <p>Roots</p>
+        <p>Matrix</p>
+        <p>Statistics</p>
+        <p>Logical</p>
       </div>
     </div>
   );
