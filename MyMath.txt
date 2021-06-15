@@ -1,0 +1,20 @@
+App requirements
+-should use at least 10 mathematical functions except add, subtract, multiply and divide
+-no backend required
+-should not look like calculator, like no grids and stuffs
+-just input some stuffs, click button and display output
+-what functions?
+	power
+	trigonometry
+	log
+	derivatives
+	integration
+	roots
+	matrix multiplication/addition/subtraction
+	statistical methods
+	binary to decimal
+	decimal to binary
+	decimal to hexa
+	hexa to decimal
+	hexa to binary
+	binary to hexa
