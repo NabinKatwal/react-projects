@@ -5,7 +5,7 @@ import { useState } from 'react'
 import './css/Basic.css'
 
 export default function Basic() {
-    const [checked, setChecked] = useState(false)
+    const [checked, setChecked] = useState(true)
 
     const onClickHandler = (e)=>{
         setChecked(!checked)
